@@ -149,7 +149,6 @@
 - (void) setText:(NSString *)text
 {
     [super setText:text];
-    [self initAttributedString];
 }
 
 /*

@@ -36,18 +36,18 @@
     [self loadCustomLabel];
 }
 
+//自定义Label
 - (void) loadSHLLabel {
     
     NSString * content = [NSString stringWithFormat:@"%@", @"这是一个自定义间距的Label，这是一个自定义间距的Label，这是一个自定义间距的Label。"];
     content = [NSString stringWithFormat:@"%@\n%@", content, content];
     
-    //自定义Label
     contentLab = [[SHLUILabel alloc] init];
+    contentLab.text = content;
     //使用自定义字体
     contentLab.font = FRONTWITHSIZE(16.f);
     //设置字体颜色
-    contentLab.textColor = RGB(44, 93, 205);
-    contentLab.text = content;
+    contentLab.textColor = RGB(77, 44, 122);
     contentLab.lineBreakMode = NSLineBreakByWordWrapping;
     contentLab.numberOfLines = 0;
     //根据字符串长度和Label显示的宽度计算出contentLab的高
@@ -57,14 +57,18 @@
     [self.view addSubview:contentLab];
 }
 
+//系统原生Label
 - (void) loadCustomLabel {
     
     NSString * content = [NSString stringWithFormat:@"%@", @"这是一个普通的Label，这是一个普通的Label，这是一个普通的Label。"];
     content = [NSString stringWithFormat:@"%@\n%@", content, content];
     
-    //系统原生Label
     customLab = [[UILabel alloc] init];
     customLab.text = content;
+    //使用自定义字体
+    customLab.font = FRONTWITHSIZE(16.f);
+    //设置字体颜色
+    customLab.textColor = RGB(44, 93, 205);
     customLab.lineBreakMode = NSLineBreakByWordWrapping;
     customLab.numberOfLines = 0;
     //根据字符串长度和Label显示的宽度计算出customLab的高
