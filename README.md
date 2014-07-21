@@ -10,4 +10,6 @@ SHLLabel
 3、可以自定义字体颜色、字体等
 
 
+![image](https://github.com/showhilllee/SHLLabel/blob/master/screenshot/IMG_0237.PNG "样式截图")
+
 
