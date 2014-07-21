@@ -10,6 +10,7 @@
 		185B464C197581210052AC9C /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185B464B197581210052AC9C /* msyh.ttf */; };
 		18F1A0A9197582DD0046F636 /* SHLUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F1A0A8197582DD0046F636 /* SHLUILabel.m */; };
 		18F1A0AB197586FF0046F636 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18F1A0AA197586FF0046F636 /* README.md */; };
+		A8B83B22197CF184006F11D7 /* IMG_0237.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A8B83B21197CF184006F11D7 /* IMG_0237.PNG */; };
 		A8F20E9E19654858001948CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F20E9D19654858001948CB /* Foundation.framework */; };
 		A8F20EA019654858001948CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F20E9F19654858001948CB /* CoreGraphics.framework */; };
 		A8F20EA219654858001948CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F20EA119654858001948CB /* UIKit.framework */; };
@@ -42,6 +43,7 @@
 		18F1A0A7197582DD0046F636 /* SHLUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLUILabel.h; sourceTree = "<group>"; };
 		18F1A0A8197582DD0046F636 /* SHLUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLUILabel.m; sourceTree = "<group>"; };
 		18F1A0AA197586FF0046F636 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		A8B83B21197CF184006F11D7 /* IMG_0237.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0237.PNG; sourceTree = "<group>"; };
 		A8F20E9A19654858001948CB /* SHLLabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHLLabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F20E9D19654858001948CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A8F20E9F19654858001948CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -105,6 +107,14 @@
 			path = SHLUILabel;
 			sourceTree = "<group>";
 		};
+		A8B83B20197CF184006F11D7 /* screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				A8B83B21197CF184006F11D7 /* IMG_0237.PNG */,
+			);
+			path = screenshot;
+			sourceTree = "<group>";
+		};
 		A8F20E9119654858001948CB = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 				A8F20EB219654858001948CB /* Main_iPad.storyboard */,
 				A8F20EB519654858001948CB /* ViewController.h */,
 				A8F20EB619654858001948CB /* ViewController.m */,
+				A8B83B20197CF184006F11D7 /* screenshot */,
 				18F1A0A6197582DD0046F636 /* SHLUILabel */,
 				185B464D197581270052AC9C /* front */,
 				A8F20EB819654858001948CB /* Images.xcassets */,
@@ -261,6 +272,7 @@
 				18F1A0AB197586FF0046F636 /* README.md in Resources */,
 				185B464C197581210052AC9C /* msyh.ttf in Resources */,
 				A8F20EB419654858001948CB /* Main_iPad.storyboard in Resources */,
+				A8B83B22197CF184006F11D7 /* IMG_0237.PNG in Resources */,
 				A8F20EB919654858001948CB /* Images.xcassets in Resources */,
 				A8F20EB119654858001948CB /* Main_iPhone.storyboard in Resources */,
 				A8F20EA819654858001948CB /* InfoPlist.strings in Resources */,
