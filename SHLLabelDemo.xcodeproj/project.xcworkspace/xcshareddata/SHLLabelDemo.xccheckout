@@ -10,29 +10,29 @@
 	<string>SHLLabelDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D8F044E7-865F-4676-A933-7C9FF6D59C25</key>
+		<key>1C9BBE63E7D76405017C040905377661B0100BCD</key>
 		<string>https://github.com/showhilllee/SHLLabel.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SHLLabelDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D8F044E7-865F-4676-A933-7C9FF6D59C25</key>
+		<key>1C9BBE63E7D76405017C040905377661B0100BCD</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/showhilllee/SHLLabel.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D8F044E7-865F-4676-A933-7C9FF6D59C25</string>
+	<string>1C9BBE63E7D76405017C040905377661B0100BCD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D8F044E7-865F-4676-A933-7C9FF6D59C25</string>
+			<string>1C9BBE63E7D76405017C040905377661B0100BCD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SHLLabel</string>
 		</dict>

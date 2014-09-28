@@ -15,7 +15,7 @@
     NSMutableAttributedString *attributedString;
 //    CGFloat characterSpacing
 }
-- (void) initAttributedString;
+- (BOOL) initAttributedString;
 @end
 
 @implementation SHLUILabel
@@ -67,9 +67,13 @@
 /*
  *初始化AttributedString并进行相应设置
  */
-- (void) initAttributedString
+- (BOOL) initAttributedString
 {
     if(attributedString==nil){
+        
+        if (self.text == nil) {
+            return NO;
+        }
         NSString *labelString = self.text;
         
         //创建AttributeString
@@ -140,6 +144,9 @@
         //给文本添加设置
         [attributedString addAttribute:(id)kCTParagraphStyleAttributeName value:(__bridge id)style range:NSMakeRange(0 , [attributedString length])];
         CFRelease(helveticaBold);
+        return YES;
+    } else {
+        return YES;
     }
 }
 
@@ -156,7 +163,10 @@
  */
 -(void) drawTextInRect:(CGRect)requestedRect
 {
-    [self initAttributedString];
+    
+    if (![self initAttributedString]) {
+        return;
+    }
     
     //排版
     
@@ -196,7 +206,9 @@
  */
 - (int)getAttributedStringHeightWidthValue:(int)width
 {
-    [self initAttributedString];
+    if (![self initAttributedString]) {
+        return 0;
+    }
     
     int total_height = 0;
     
@@ -228,4 +240,10 @@
     
     return total_height;
 }
+
+- (void)dealloc
+{
+    attributedString = nil;
+}
+
 @end
