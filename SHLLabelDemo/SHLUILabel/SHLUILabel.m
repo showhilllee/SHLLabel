@@ -36,6 +36,7 @@
         self.characterSpacing = 1.5f;
         self.linesSpacing = 4.0f;
         self.paragraphSpacing = 10.0f;
+        [self attachTapHandler];
     }
     
     return self;
@@ -241,6 +242,54 @@
     return total_height;
 }
 
+
+#pragma mark - copy
+//为了能接收到copy事件（能成为第一响应者），我们需要覆盖一个方法：
+-(BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+//还需要针对复制的操作覆盖两个方法：
+// 可以响应的方法
+-(BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+    return (action == @selector(copy:));
+}
+
+//针对于响应方法的实现
+-(void)copy:(id)sender
+{
+    UIPasteboard *pboard = [UIPasteboard generalPasteboard];
+    pboard.string = self.text;
+    NSLog(@"%@", pboard.string);
+}
+
+//UILabel默认是不接收事件的，我们需要自己添加touch事件
+-(void)attachTapHandler
+{
+    self.userInteractionEnabled = YES;  //用户交互的总开关
+    //双击
+    UITapGestureRecognizer *touch = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+    touch.numberOfTapsRequired = 2;
+    [self addGestureRecognizer:touch];
+    //长按
+    UILongPressGestureRecognizer* longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+    [self addGestureRecognizer:longPressGestureRecognizer];
+}
+
+-(void)handleTap:(UIGestureRecognizer*) recognizer
+{
+    [self becomeFirstResponder];
+    UIMenuItem *copyLink = [[UIMenuItem alloc] initWithTitle:@"复制" action:@selector(copy:)];
+    
+    UIMenuController *menu = [UIMenuController sharedMenuController];
+    [menu setMenuItems:@[copyLink]];
+    [menu setTargetRect:self.frame inView:self.superview];
+    [menu setMenuVisible:YES animated:YES];
+}
+
+#pragma mark - end
 - (void)dealloc
 {
     attributedString = nil;

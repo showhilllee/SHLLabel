@@ -6,32 +6,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SHLLabelDemo/SHLUILabel/SHLUILabel.m"
-            timestampString = "433585683.261461"
+            timestampString = "436346492.18387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
-            landmarkName = "-drawTextInRect:"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "-getAttributedStringHeightWidthValue:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SHLLabelDemo/SHLUILabel/SHLUILabel.m"
-            timestampString = "433585486.251211"
+            timestampString = "436346492.18387"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "-initAttributedString"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "-drawTextInRect:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
